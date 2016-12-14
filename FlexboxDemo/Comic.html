@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0">
+	<title>FlexBox实现弹性布局</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: #f3f2ef;
+			font-family: sans-serif;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		.comic{
+			padding: 30px 0;
+			text-align: center;
+			background: #e5e8e1;
+			box-shadow: 0 0 1px rgba(0,0,0,0.2) inset;
+			flex: 1 1 auto;
+			
+		}
+		.comic:nth-child(even){
+			margin-left: 0;
+		}
+		.comic h1{
+			color: #666;
+			font-weight: normal;
+			font-size: 2em;
+		}
+	</style>
+</head>
+<body>
+	<div class="comic">
+		<img src="images/fate.png" alt="Fate">
+		<h1>Fate</h1>
+	</div>
+	<div class="comic">
+		<img src="images/hulk.png" alt="Hulk">
+		<h1>Hulk</h1>
+	</div>
+	<div class="comic">
+		<img src="images/superman.png" alt="Superman">
+		<h1>Superman</h1>
+	</div>
+	<div class="comic">
+		<img src="images/captain.png" alt="Captain">
+		<h1>Captain</h1>
+	</div>
+	<div class="comic">
+		<img src="images/wonder.png" alt="Wonder">
+		<h1>Wonder</h1>
+	</div>
+	<div class="comic">
+		<img src="images/ironman.png" alt="Ironman">
+		<h1>Ironman</h1>
+	</div>
+</body>
+</html>
